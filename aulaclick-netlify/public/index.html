@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AulaClick</title>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';</script>
+</head>
+<body>
+<section id="login" class="login" hidden>
+  <form id="loginForm" class="card login-card">
+    <h1>🎓 AulaClick</h1>
+    <p class="muted">Tu vida escolar, organizada.</p>
+    <label>Correo electrónico<input name="email" type="email" required autocomplete="username"></label>
+    <label>Contraseña<input name="password" type="password" required autocomplete="current-password"></label>
+    <button class="btn" id="loginBtn">Entrar</button>
+    <button type="button" class="link" id="forgot">¿Olvidaste tu contraseña?</button>
+    <button type="button" class="link" id="signup">Crear cuenta de estudiante</button>
+  </form>
+</section>
+<div id="shell" class="shell" hidden>
+  <aside id="side" class="side"><div class="brand">🎓 AulaClick</div><nav id="nav"></nav></aside>
+  <div class="content">
+    <header class="top">
+      <button class="btn ghost" id="menu" aria-label="Abrir menú">☰</button>
+      <select id="courseSel" aria-label="Curso" hidden></select>
+      <span class="grow"></span>
+      <button class="btn ghost" id="themeBtn" aria-label="Cambiar tema">🌓</button>
+      <button class="btn ghost" id="logout">Salir</button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

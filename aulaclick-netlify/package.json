@@ -1,0 +1,15 @@
+{
+  "name": "aulaclick-netlify",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild src/identity.js --bundle --format=esm --platform=browser --outfile=public/js/identity.bundle.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "latest",
+    "@netlify/identity": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
