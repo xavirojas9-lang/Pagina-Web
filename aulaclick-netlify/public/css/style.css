@@ -33,3 +33,4 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px;bord
 .sw{display:inline-block;width:16px;height:16px;border-radius:5px;vertical-align:middle}.setup{max-width:640px;margin:10vh auto;padding:20px}
 @media(max-width:900px){.week{grid-template-columns:1fr}.side{position:fixed;left:-260px;z-index:50;transition:left .2s}.side.open{left:0}#menu{display:block}main{padding:14px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+   [hidden]{display:none!important}
